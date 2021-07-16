@@ -1,0 +1,44 @@
+.a, .b, .c {
+  font-size: 14px;
+  color: blue;
+}
+
+.visual div, .main div, .footer div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.a {
+  font-weight: 800;
+  background-color: red;
+}
+
+.visual {
+  background: pink;
+  height: 33.3333vh;
+}
+
+.visual div {
+  background: rgba(0, 0, 0, 0.5);
+  height: 33.3333vh;
+}
+
+.main {
+  background: coral;
+  height: 33.3333vh;
+}
+
+.main div {
+  background: rgba(0, 0, 0, 0.5);
+  height: 33.3333vh;
+}
+
+.footer {
+  background: aquamarine;
+  height: 33.3333vh;
+}
+
+.footer div {
+  background: rgba(0, 0, 0, 0.5);
+  height: 33.3333vh;
+}

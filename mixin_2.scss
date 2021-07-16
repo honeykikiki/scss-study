@@ -1,0 +1,10 @@
+@mixin bx($position, $wid, $color) {
+  border-#{$position}: $wid solid $color;
+}
+
+span {
+  @include bx(right, 2px, blue);
+}
+p {
+  @include bx(bottom, 2px, gold);
+}

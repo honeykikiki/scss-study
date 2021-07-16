@@ -1,0 +1,22 @@
+.list li {
+  text-indent: 20px;
+  background: no-repeat 0 0 / 20px;
+}
+
+@for $i from 1 to 6 {
+  .list li.ico#{$i} {
+    color: red;
+    background-image: url(ico#{$i}.png);
+  }
+  .list li:nth-child(#{$i}):before {
+    content: "제목#{$i}";
+    display: inline-block;
+    width: 70px;
+  }
+}
+// .list li.ico1 {
+//   background: url(icon.png) np-repeat;
+// }
+// .list li.ico2 {
+//   background: url(icon.png) np-repeat;
+// }

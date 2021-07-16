@@ -1,0 +1,9 @@
+@mixin box($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+div {
+  @include box(30vw, 40vh);
+  border: 1px dotted red;
+}

@@ -1,0 +1,57 @@
+@mixin clear {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin ellipsis($w) {
+  overflow: hidden;
+  display: block;
+  width: $w;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin ellipsis2($line, $w, $h) {
+  overflow: hidden;
+  // 여러줄로 만드는 코드
+  display: -webkit-box;
+  // .... 나오는 코드
+  -webkit-line-clamp: $line;
+  width: $w;
+  height: $h;
+  // over 된 글씨 지워지지않고 밑으로 내려가는코드
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+// @mixin center($w) {
+//   position: absolute;
+//   width: $w;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+@mixin position($x, $y, $z, $w) {
+  position: absolute;
+  left: $x;
+  top: $y;
+  z-index: $z;
+  width: $w;
+  @if ($x == 50% and $y == 50%) {
+    transform: translate(-50%, -50%);
+  } @else if($x == 50%) {
+    transform: translatex(-50%);
+  } @else if ($y == 50%) {
+    transform: translatey(-50%);
+  }
+}
+
+div {
+  @include position(50%, 50%, 2, 300px);
+  height: 300px;
+  border: 1px solid red;
+}

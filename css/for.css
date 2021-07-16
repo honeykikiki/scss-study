@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.list li {
+  text-indent: 20px;
+  background: no-repeat 0 0 / 20px;
+}
+
+.list li.ico1 {
+  color: red;
+  background-image: url(ico1.png);
+}
+
+.list li:nth-child(1):before {
+  content: "제목1";
+  display: inline-block;
+  width: 70px;
+}
+
+.list li.ico2 {
+  color: red;
+  background-image: url(ico2.png);
+}
+
+.list li:nth-child(2):before {
+  content: "제목2";
+  display: inline-block;
+  width: 70px;
+}
+
+.list li.ico3 {
+  color: red;
+  background-image: url(ico3.png);
+}
+
+.list li:nth-child(3):before {
+  content: "제목3";
+  display: inline-block;
+  width: 70px;
+}
+
+.list li.ico4 {
+  color: red;
+  background-image: url(ico4.png);
+}
+
+.list li:nth-child(4):before {
+  content: "제목4";
+  display: inline-block;
+  width: 70px;
+}
+
+.list li.ico5 {
+  color: red;
+  background-image: url(ico5.png);
+}
+
+.list li:nth-child(5):before {
+  content: "제목5";
+  display: inline-block;
+  width: 70px;
+}

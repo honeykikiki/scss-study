@@ -1,0 +1,53 @@
+%name {
+  font-size: 14px;
+  color: blue;
+}
+
+@mixin name($bold, $color) {
+  font-weight: $bold;
+  background-color: $color;
+}
+
+%m0auto {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.a {
+  @extend %name;
+  @include name(800, red);
+}
+.b {
+  @extend %name;
+}
+.c {
+  @extend %name;
+}
+
+.visual {
+  background: pink;
+  height: 33.3333vh;
+  div {
+    @extend %m0auto;
+    background: rgba(0, 0, 0, 0.5);
+    height: 33.3333vh;
+  }
+}
+.main {
+  background: coral;
+  height: 33.3333vh;
+  div {
+    @extend %m0auto;
+    background: rgba(0, 0, 0, 0.5);
+    height: 33.3333vh;
+  }
+}
+.footer {
+  background: aquamarine;
+  height: 33.3333vh;
+  div {
+    @extend %m0auto;
+    background: rgba(0, 0, 0, 0.5);
+    height: 33.3333vh;
+  }
+}

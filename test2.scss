@@ -1,0 +1,22 @@
+.a {
+  color: red;
+  ul {
+    border: 1px solid red;
+    > li {
+      background-color: pink;
+      a {
+        text-decoration: none;
+        &:hover {
+          color: red;
+          background-color: aqua;
+        }
+        &.ddd {
+          font-size: 12px;
+        }
+      }
+      &:nth-child(2) {
+        border: 1px dotted blue;
+      }
+    }
+  }
+}

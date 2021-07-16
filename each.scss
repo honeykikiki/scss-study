@@ -1,0 +1,17 @@
+@each $const in red, blue, gold {
+  .ico_#{$const} {
+    color: $const;
+  }
+}
+
+$heading: (
+  h1: 30px,
+  h2: 20px,
+  h3: 10px,
+);
+
+@each $ele, $fs in $heading {
+  #{$ele} {
+    font-size: $fs;
+  }
+}

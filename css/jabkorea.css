@@ -1,0 +1,27 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  font: 1rem;
+}
+
+header {
+  background: #5f98fc;
+  padding: 0 0.6333rem;
+}
+
+header h1 {
+  float: left;
+}
+
+header a {
+  display: block;
+  color: #fff;
+  width: 4.9666rem;
+  height: 0.8333rem;
+}
+
+header .info {
+  float: right;
+}
